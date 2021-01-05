@@ -1,4 +1,8 @@
-buildscript {
+
+    dependencies{
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}buildscript {
     ext {
         springBootVersion = '2.1.7.RELEASE'
     }
@@ -6,12 +10,8 @@ buildscript {
         mavenCentral()
         jcenter()
     }
-    dependencies{
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
-}
 
-plugins {
+plugins {A
     id 'java'
     id 'eclpise'
     id 'org.springframework.boot'
